@@ -1,0 +1,41 @@
+1. ¿Qué sucesión estamos usando para seleccionar las piezas correctas?
+
+R/La sucesion es la de fibonacci 
+
+
+2. ¿Estamos descartando algún elemento de la sucesión? ? Cuáles : OK.
+
+
+3. ¿Qué tipo de codificación estamos usando?
+
+R/ es esta usando una codificacion utf8 ya que no se esta declarando  otro tipo de codificación 
+
+4. Enumere y explique los errores encontrados.
+
+$fibonacci_sequence[$i+2] es ilogico la sucesion de finonacci suma con el numero anterior ya que si al ser i = 0 + 2 ps el arreglo se iba a reventar no existia una posicion 2
+
+get_decoding_result($encoded_string); se debe mostrar el arreglo usando implode para mostrar el string  
+
+include "Pieces.php";
+esta mal declarado pq el archivo se llama piaces.php
+
+Deje solo un array para la serie por que era innecesario igual un arreglo que no se va utilizar ,
+$fibonacci_seeds = array(0, 1);
+$fibonacci_sequence = $fibonacci_seeds;
+por eso si vez el documento que te envie solo dejo el que tiene declarado los valores
+
+echo get_decoding_result($encoded_string);
+function get_decoding_result() {
+    // TODO: Return decoded string.
+}
+esa funcion, la vi innecesaria , pero ps no le veo la logica por que segun lo que vi el implode, ya te convierte en string todos lo que tenga tu array ademas ps no estaba retornando nada asi que fue mas facil imprimirla de una
+
+for ($i = 2; $i < strlen($pieces[0]); $i++) { se debe inicializar el for en dos 
+
+
+5. ¿Cuál es la clave?
+
+la clave la arrojo
+pero no la codifico
+solo organizo en un string todo el valor del array
+
